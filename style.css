@@ -38,8 +38,8 @@ body {
 .attribution {
   font-size: var(--font-size-attribution);
   text-align: center;
-  position: absolute;
-  bottom: var(--spacing-sm);
+  margin-top: auto;
+  padding-bottom: var(--spacing-sm);
   width: 100%;
 }
 .attribution a {
@@ -48,7 +48,9 @@ body {
 
 .card {
   background-color: var(--color-white);
-  width: min(90%, 20rem);
+  width: 90%;
+  max-width: 20rem;
+  min-width: 15rem;
   border-radius: var(--radius-card);
   padding: var(--spacing-sm);
   margin: 0 auto;
@@ -57,7 +59,10 @@ body {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .qr-image {
